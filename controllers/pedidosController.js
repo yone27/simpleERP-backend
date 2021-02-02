@@ -18,7 +18,6 @@ exports.mostrarPedidos = async(req, res, next) => {
             model: 'Productos'
         })
         res.json(pedidos)
-
     } catch (error) {
         res.json({ mensaje: 'Hubo un error' })
         next()

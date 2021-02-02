@@ -5,7 +5,6 @@ exports.nuevoCliente = async(req, res) => {
     const cliente = new Clientes(req.body)
     try {
         //almacenamos el registro
-
         await cliente.save()
         res.json({ mensaje: 'Se agrego un nuevo cliente' })
 

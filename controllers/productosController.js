@@ -113,8 +113,6 @@ exports.editarProducto = async(req, res, next) => {
 
         res.json(producto)
     } catch (error) {
-        console.log(error);
-        
         res.json({ mensaje: 'Hubo un peo' })
         next()
     }
